@@ -1,12 +1,3 @@
----
-title: Vektor
-emoji: ⚡
-colorFrom: purple
-colorTo: blue
-sdk: docker
-pinned: false
-license: mit
----
 
 # ⚡ Vektor — AI-Powered Data Intelligence
 
