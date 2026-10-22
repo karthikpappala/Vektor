@@ -6,7 +6,10 @@
 }
 
 .stApp { background-color: #07070f; color: #e2e2f0; }
-#MainMenu, footer, header { visibility: hidden; }
+#MainMenu, footer { visibility: hidden; }
+[data-testid="stHeader"] { background: transparent; }
+[data-testid="stToolbar"], [data-testid="stDeployButton"] { visibility: hidden; }
+[data-testid="stSidebarCollapsedControl"], [data-testid="collapsedControl"] { visibility: visible !important; }
 
 /* ── HERO ── */
 .hero-wrap {
