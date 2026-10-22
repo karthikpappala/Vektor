@@ -123,6 +123,20 @@ st.markdown(f"""
     Use the sidebar to explore each analysis.
 </div>""", unsafe_allow_html=True)
 
+
+# ── Navigation (works even if sidebar is collapsed) ───────────────────────────
+st.markdown('<p class="section-header">Explore Your Data</p>', unsafe_allow_html=True)
+n1, n2, n3 = st.columns(3)
+with n1:
+    st.page_link("pages/1_EDA.py", label="EDA Report", icon="📊", use_container_width=True)
+    st.page_link("pages/4_AI_Narrative.py", label="AI Narrative", icon="🧠", use_container_width=True)
+with n2:
+    st.page_link("pages/2_ML_Readiness.py", label="ML Readiness", icon="🎯", use_container_width=True)
+    st.page_link("pages/5_Chat.py", label="Chat", icon="💬", use_container_width=True)
+with n3:
+    st.page_link("pages/3_Baseline_Models.py", label="Baseline Models", icon="🌲", use_container_width=True)
+    st.page_link("pages/6_Preprocessing_Script.py", label="Preprocessing Script", icon="📄", use_container_width=True)
+
 # Preview
 st.markdown('<p class="section-header">Data Preview</p>', unsafe_allow_html=True)
 st.dataframe(data["df"].head(8), use_container_width=True)
